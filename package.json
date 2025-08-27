@@ -1,0 +1,24 @@
+{
+  "name": "mm",
+  "version": "1.0.0",
+  "description": "mindmap",
+  "homepage": "https://github.com/opgumo3/mm#readme",
+  "bugs": {
+    "url": "https://github.com/opgumo3/mm/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/opgumo3/mm.git"
+  },
+  "license": "ISC",
+  "author": "opgumo",
+  "type": "commonjs",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "electron": "^37.3.1"
+  }
+}
