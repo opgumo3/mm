@@ -1,0 +1,38 @@
+/* src/components/FileExplorerNode.css */
+
+.file-node {
+  margin-top: 5px;
+  cursor: pointer;
+  white-space: nowrap; /* 텍스트가 줄바꿈되지 않도록 */
+}
+
+.node-name {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1rem;
+  color: #333;
+  display: flex;
+  align-items: center;
+  padding: 2px 5px;
+  border-radius: 3px;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.node-name:hover {
+  background-color: #e0e0e0;
+}
+
+.file-node.folder > .node-name {
+  font-weight: bold;
+  color: #007bff; /* 폴더 이름 색상 */
+}
+
+.file-node.file > .node-name {
+  font-weight: normal;
+  color: #555; /* 파일 이름 색상 */
+}
+
+.children-container {
+  border-left: 1px solid #ccc;
+  margin-left: 10px;
+  padding-left: 5px;
+}

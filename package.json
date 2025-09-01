@@ -13,12 +13,13 @@
   "license": "ISC",
   "author": "opgumo",
   "type": "module",
-  "main": "dist/main.js",
+  "main": "dist/electron/main.js",
   "scripts": {
-    "start": "electron .",
-    "dev": "vite",
-    "build": "vite build",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev:render": "vite",
+    "dev:main": "tsc --project tsconfig.electron.json",
+    "dev": "npm run dev:render & npm run dev:main & wait",
+    "build": "vite build && tsc --project tsconfig.electron.json",
+    "start": "electron ."
   },
   "devDependencies": {
     "@types/react": "^19.1.12",

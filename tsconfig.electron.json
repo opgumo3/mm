@@ -8,13 +8,13 @@
     "exactOptionalPropertyTypes": true,
     "isolatedModules": true,
     "skipLibCheck": true,
+    "outDir": "./dist/electron",
+    "rootDir": "./electron",
 
     /* Bundler mode */
     "moduleResolution": "bundler",
-    "allowImportingTsExtensions": true,
     "verbatimModuleSyntax": true,
     "moduleDetection": "force",
-    "noEmit": true, // 타입 검사만 수행하고, 실제로 자바스크립트 파일을 생성하지 않음
     "jsx": "react-jsx",
 
     /* Linting */
@@ -25,6 +25,6 @@
     "noFallthroughCasesInSwitch": true,
     "noUncheckedSideEffectImports": true
   },
-  "include": ["src/**/*.ts", "src/**/*.tsx", "electron/**/*.ts", "index.d.ts"],
+  "include": ["electron/**/*.ts"],
   "exclude": ["node_modules", "dist"]
 }
