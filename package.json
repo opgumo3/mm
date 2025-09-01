@@ -15,8 +15,9 @@
   "type": "module",
   "main": "dist/main.js",
   "scripts": {
-    "start": "npm run build && electron .",
-    "build": "tsc",
+    "start": "electron .",
+    "dev": "vite",
+    "build": "vite build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
