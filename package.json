@@ -16,8 +16,8 @@
   "main": "dist/electron/main.js",
   "scripts": {
     "dev:render": "vite",
-    "dev:main": "tsc --project tsconfig.electron.json",
-    "dev": "npm run dev:render & npm run dev:main & wait",
+    "dev:electron": "tsc --project tsconfig.electron.json",
+    "dev": "npm run dev:render & npm run dev:electron & wait & electron .",
     "build": "vite build && tsc --project tsconfig.electron.json",
     "start": "electron ."
   },
@@ -30,6 +30,8 @@
   },
   "dependencies": {
     "react": "^19.1.1",
-    "react-dom": "^19.1.1"
+    "react-dom": "^19.1.1",
+    "react-flow": "^1.0.3",
+    "reactflow": "^11.11.4"
   }
 }
