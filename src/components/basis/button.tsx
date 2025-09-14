@@ -6,7 +6,7 @@ import React from 'react';
  * - onClick: 버튼 클릭 시 실행될 함수
  * - variant: 버튼의 색상 테마
  * - size: 버튼의 크기 ('small', 'medium', 'large')
- * - className: 외부에서 추가 Tailwind CSS 클래스를 적용할 때 사용
+ * - className: 외부에서 추가 CSS 클래스를 적용할 때 사용
  */
 interface ButtonProps {
   label: string;

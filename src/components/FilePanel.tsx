@@ -17,7 +17,7 @@ export const FilePanel: React.FC<Props> = ({ fileData, onClose }) => {
 
   return (
     <div
-      className="absolute top-0 right-0 h-full w-96 bg-white shadow-lg border-l border-gray-300"
+      className="absolute top-0 right-0 h-full w-96 bg-white shadow-lg border-l border-gray-300 z-50"
       onClick={(e) => e.stopPropagation()}
     >
       <div className="flex justify-between items-center p-4 border-b border-gray-200 bg-gray-50">
